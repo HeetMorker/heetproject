@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* utillity css */
+:root{
+    --bs-blue:#5D87FF;
+    --bs-orange:#FA896B;
+    --gutter-width:12px;
+    --dark:#000000;
+    --light:#ffffff;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-content-center{
+    align-content: center;
+}
+a{
+    text-decoration: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 calc(-1 * var(--gutter-width));
+}
+.d-flex{
+    display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+.container{
+    max-width: 1320px;
+    margin: auto;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.text-center{
+    text-align: center;
+}
+.text-justify{
+    text-align: justify;
+}
+ul li{
+    list-style: none;
+}
+.w-1 {width: 8.33%; padding: 0 var(--gutter-width);}
+.w-2 {width: 16.66%; padding: 0 var(--gutter-width);}
+.w-3 {width: 25%; padding: 0 var(--gutter-width);}
+.w-4 {width: 33.33%; padding: 0 var(--gutter-width);}
+.w-5 {width: 41.66%; padding: 0 var(--gutter-width);}
+.w-6 {width: 50%; padding: 0 var(--gutter-width);}
+.w-7 {width: 58.33%; padding: 0 var(--gutter-width);}
+.w-8 {width: 66.66%; padding: 0 var(--gutter-width);}
+.w-9 {width: 75%; padding: 0 var(--gutter-width);}
+.w-10 {width: 83.33%; padding: 0 var(--gutter-width);}
+.w-11 {width: 91.66%; padding: 0 var(--gutter-width);}
+.w-12 {width: 100%; padding: 0 var(--gutter-width);}
+.w-0{
+    width: 0;
+}
+.ml-0{
+    margin-left: 0px !important;
+}
+
+
+/* header start */
+header{
+    background-color: var(--dark);
+    padding: 20px;
+    font-size: 20px;
+    color: var(--light);
+}
+header .bar i{
+    color: var(--light);
+    font-size: 20px;
+    position: relative;
+    z-index: 500;
+}
+input[type=search]{
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    display: none;
+}
+.icon li{
+    margin-right: 20px;
+}
+
+
+
+/* aside start */
+aside{
+    width:300px;
+    background-color: var(--dark);
+    font-size: 20px;
+    color: var(--light);
+    position: fixed;
+    top: 63px;
+    left: 0;
+    z-index: 99;
+    display: none;
+}
+.sidebar{
+    overflow-y: scroll;
+    height: 100vh;
+}
+.sidebar::-webkit-scrollbar{
+    width:10px;
+    border-radius: 20px;
+}
+.sidebar::-webkit-scrollbar-thumb{
+    background-color: #0d0808;
+    border-radius: 20px;
+}
+.sidebar::-webkit-scrollbar-track{
+   background-color: #bbbcbc;
+   border-radius: 10px;
+}
+.sidebar .menu li{
+    padding: 8px;
+}
+.sidebar a{
+    color: var(--light);
+    font-size: 20px;
+    margin-inline: 20px;
+} 
+.nav-link1{
+    position: relative;
+}
+
+
+.bhai::after{
+    content: "\f0142";
+    font-family: "Material Design Icons";
+    position: absolute;
+    color: var(--light);
+    font-size: 20px;
+    right: 20px;
+   
+}
+.d-block{
+    display: block;
+}
